@@ -26,7 +26,22 @@ console.log('Hello Console!');
 
 ## Why?
 
-There are lots of similar utilities already, but I needed minimalistic one for Node.js environment.
+I used this utility for debugging before/after hooks in WebdriverIO's config file.
+
+## FAQ
+
+### Error: `Module not found: Error: Cannot resolve module 'tls'`
+
+If you use console.ws with webpack/browserify, please setup your webpack/browserify config
+to ignore `console.ws` and `tls` modules.
+
+Here is a full error output.
+
+```
+ERROR in ./~/ws/lib/WebSocketServer.js
+Module not found: Error: Cannot resolve module 'tls' in /path/to/project/node_modules/ws/lib
+ @ ./~/ws/lib/WebSocketServer.js 15:10-24
+```
 
 ## Limitation
 
