@@ -1,4 +1,4 @@
-'use strict';
+#!/usr/bin/env node
 
 var WebSocketServer = require('ws').Server;
 var wss = new WebSocketServer({ port: 5013 });
