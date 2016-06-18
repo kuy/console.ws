@@ -1,6 +1,6 @@
 # console.ws
 
-WebSocket powered remote console.log() for Node.js.
+WebSocket-powered lightweight remote console.log() for Node.js.
 
 ## Install
 
@@ -10,7 +10,7 @@ npm install --save-dev console.ws
 
 ## Usage
 
-### 1. Run console.ws server
+### 1. Start console.ws server
 
 ```
 ./node_modules/.bin/console
@@ -26,16 +26,21 @@ console.log('Hello Console!');
 
 ## Why?
 
-I used this utility for debugging before/after hooks in WebdriverIO's config file.
+I'm using for debugging of before/after hooks in WebdriverIO's config file.
+In `wdio.conf.js` file, the output from `console.log()` is not captured and shown in the terminal.
 
 ## FAQ
 
-### Error: `Module not found: Error: Cannot resolve module 'tls'`
+### Lightweight?
 
-If you use console.ws with webpack/browserify, please setup your webpack/browserify config
-to ignore `console.ws` and `tls` modules.
+**console.ws** depends on WebSocket implementation [ws](https://github.com/websockets/ws) module, not [Socket.IO](http://socket.io/).
 
-Here is a full error output.
+### `Module not found: Error: Cannot resolve module 'tls'`
+
+If you're using [webpack](https://webpack.github.io/), please tweak your `webpack.config.js` file
+to ignore `console.ws` and `tls` modules because Webpack can't handle some native modules correctly.
+
+Here is the error detail.
 
 ```
 ERROR in ./~/ws/lib/WebSocketServer.js
@@ -45,11 +50,11 @@ Module not found: Error: Cannot resolve module 'tls' in /path/to/project/node_mo
 
 ## Limitation
 
-You can't use this utility on browsers. The both client and server must be run on Node.js.
+You can't use **console.ws** on browsers. The both client and server must be run on Node.js.
 
 ## API
 
-*Note: Not enough compatibility with [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console)*
+*Note: Not enough [compatibility](https://github.com/kuy/console.ws/issues/2) with [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console)*
 
 ### `console.log(msg)`
 

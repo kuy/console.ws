@@ -1,7 +1,7 @@
 {
   "name": "console.ws",
   "version": "0.0.1",
-  "description": "WebSocket powered remote console.log() for Node.js",
+  "description": "WebSocket-powered lightweight remote console.log() for Node.js",
   "bin": {
     "console": "bin/cli.js"
   },
