@@ -1,0 +1,33 @@
+{
+  "name": "console.ws",
+  "version": "0.0.1",
+  "description": "WebSocket powered remote console.log() for Node.js",
+  "bin": {
+    "console": "bin/cli.js"
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuy/console.ws.git"
+  },
+  "keywords": [
+    "console",
+    "console.log",
+    "devtools",
+    "Console API",
+    "debug",
+    "ws",
+    "WebSocket"
+  ],
+  "authors": [
+    "Yuki Kodama <endflow.net@gmail.com> (http://github.com/kuy)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuy/console.ws/issues"
+  },
+  "homepage": "https://github.com/kuy/console.ws",
+  "dependencies": {
+    "ws": "^1.1.0"
+  }
+}
