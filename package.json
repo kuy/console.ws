@@ -29,5 +29,21 @@
   "homepage": "https://github.com/kuy/console.ws",
   "dependencies": {
     "ws": "^1.1.0"
+  },
+  "devDependencies": {
+    "beater": "^0.4.0",
+    "beater-cli": "^0.2.2",
+    "espower-loader": "^1.0.0",
+    "power-assert": "^1.4.1",
+    "rewire": "^2.5.1",
+    "testdouble": "^1.4.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/beater"
+  },
+  "beater": {
+    "require": [
+      "./scripts/enable-power-assert.js"
+    ]
   }
 }
