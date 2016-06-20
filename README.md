@@ -1,3 +1,7 @@
+[![NPM Package][npm_img]][npm_site]
+[![Travis][ci_img]][ci_site]
+[![Dependency Status][david_img]][david_site]
+
 # console.ws
 
 WebSocket-powered lightweight remote console.log() for Node.js.
@@ -65,3 +69,10 @@ Yuki Kodama / [@kuy](https://twitter.com/kuy)
 ## License
 
 MIT
+
+[npm_img]: https://img.shields.io/npm/v/console.ws.svg
+[npm_site]: https://www.npmjs.org/package/console.ws
+[ci_img]: https://img.shields.io/travis/kuy/console.ws/master.svg?style=flat-square
+[ci_site]: https://travis-ci.org/kuy/console.ws
+[david_img]: https://img.shields.io/david/kuy/console.ws.svg
+[david_site]: https://david-dm.org/kuy/console.ws
